@@ -1,6 +1,33 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
+    <!--
+    <script type="text/javascript">
+        window.onload = function(){
+            //屏蔽键盘事件
+            document.onkeydown = function (){
+                var e = window.event || arguments[0];
+                //F12
+                if(e.keyCode == 123){
+                    return false;
+                //Ctrl+Shift+I
+                }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+                    return false;
+                //Shift+F10
+                }else if((e.shiftKey) && (e.keyCode == 121)){
+                    return false;
+                //Ctrl+U
+                }else if((e.ctrlKey) && (e.keyCode == 85)){
+                    return false;
+                }
+            };
+            //屏蔽鼠标右键
+            document.oncontextmenu = function (){
+                return false;
+            }
+        }
+    </script>
+    -->
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -103,13 +130,13 @@
             </p>
         </td>
     </tr>
-    <tr>
+    <!-- <tr>
         <td halign="right">
             <p align="right">
                 <font size="3"><a href="#">中文</a> | <a href="#">EN</a></font>
             </p>
         </td>
-    </tr>
+    </tr> -->
     <tr>
         <td>
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -132,8 +159,8 @@
         
                         <p align="center">
                             <!-- <a href="files/cv.pdf">CV</a> | -->
-                            <a href="data/cv_JiaMian.pdf">CV</a> |
-                            <a href="mailto:jiamian_1999@163.com">E-Mail</a> | 
+                            <a href="data/JiaMian_cv.pdf" target="_blank">CV</a> |
+                            <a href="mailto:jiamian_1999@163.com" target="_blank">E-Mail</a> | 
                             <a href="images/wechat.png" target="_blank">WeChat</a> | 
                             <a href="https://github.com/jiamian22" target="_blank">Github</a> | 
                             <a href="https://www.cnblogs.com/jiamian" target="_blank">Blog</a>
@@ -166,10 +193,16 @@
                 <!-- 一月Jan，二月Feb，三月Mar，四月Apr，五月May，六月Jun，七月Jul，八月Aug，九月Sept，十月Oct，十一月Nov，十二月Dec。 -->
                 <!-- 😊🎉🙇👩‍💻😀🆕🏫⭐ -->
                 <tr>
-                    <td valign="top" align="center"><tableheading>2022.10</tableheading></td>
+                    <td valign="top" align="center"><tableheading>2023.11</tableheading></td>
                     <td>
                         <img src="images/new.png" alt="[NEW]" width="5%" style="border-style: none">
-                        获得2022年度硕士研究生学业奖学金。😀
+                        获得 2023 年度硕士研究生学业奖学金。😀
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td valign="top" align="center"><tableheading>2022.10</tableheading></td>
+                    <td>
+                        获得 2022 年度硕士研究生学业奖学金。
                     </td>
                 </tr>
                 <tr>
@@ -177,7 +210,7 @@
                     <td>
                         进入吉林大学报道！
                     </td>
-                </tr>
+                </tr> -->
                 </tbody>
             </table>
 
@@ -258,16 +291,45 @@
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td valign="top" align="center"><tableheading><strong>英语</strong></tableheading></td>
-                        <td>通过 CET-4，具备不错的英文文献阅读能力。</td>
+                        <td valign="top" align="center"><tableheading><strong>英语能力</strong></tableheading></td>
+                        <td>通过 CET-4 ，具备不错的英文文档阅读能力；</td>
                     </tr>
                     <tr>
                         <td valign="top" align="center"><tableheading><strong>编程语言</strong></tableheading></td>
-                        <td>熟练使用 C++编程语言，熟悉 STL 下常见容器底层数据结构，了解 Python、Java、SQL 等。</td>
+                        <td>熟练使用 C++ ，熟悉面向对象知识与 RAII 思想，了解 STL 常用容器和适配器的底层实现原理，灵活使用 STL 与 C++ 新特性，如：泛型编程、右值引用、智能指针、可调用对象等；</td>
                     </tr>
                     <tr>
                         <td valign="top" align="center"><tableheading><strong>数据结构与算法</strong></tableheading></td>
-                        <td>在校期间多次参加 ACM 程序设计竞赛，掌握二分、并查集、线段树、Trie 树等数据结构与算法。</td>
+                        <td>多次参加 ACM 程序设计竞赛，熟练掌握二分、搜索、并查集、线段树、Trie 树、DP 等；</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="center"><tableheading><strong>操作系统</strong></tableheading></td>
+                        <td>熟悉 Linux 环境下常用命令及相关工具的使用，掌握文件操作、进程管理与通信等；</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="center"><tableheading><strong>网络编程</strong></tableheading></td>
+                        <td>熟悉 TCP/IP 四层模型，掌握 IP、TCP/UDP、HTTP 等常见的网络协议；掌握 Socket 编程、IO 多路复用接口 Select/Poll/Epoll 和 Reactor 网络模型；</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="center"><tableheading><strong>并发编程</strong></tableheading></td>
+                        <td>熟悉线程、锁、信号量、条件变量、期望、异步并发、原子操作、线程池等；</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="center"><tableheading><strong>设计模式</strong></tableheading></td>
+                        <td>了解单例、工厂、原型、代理、适配器、策略、模版方法、观察者等常用设计模式；</td>
+                    </tr>
+                    <!-- <tr>
+                        <td valign="top" align="center"><tableheading><strong>建图与定位</strong></tableheading></td>
+                        <td>XXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                    </tr> -->
+                    <tr>
+                        <td valign="top" align="center"><tableheading><strong>工具链</strong></tableheading></td>
+                        <td>熟练使用 Vim、GCC、GDB、Git、Docker 等工具、能够使用 Makefile 或 CMake 编译大型项目；</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="center"><tableheading><strong>其他</strong></tableheading></td>
+                        <td>熟悉 Python、PyTorch 以及一定的深度学习知识；熟悉 ROS 系统，熟悉 PCL、Eigen、Ceres、
+                            OpenCV 等 SLAM 常用库；熟悉 LaTeX 与 Shell 脚本的书写；</td>
                     </tr>
                     <!--
                     <tr>
@@ -314,50 +376,165 @@
                     <col width="80%">
                 </colgroup>
                 <tbody>
-                <tr>
-                    <td valign="top" align="center"><tableheading>2021.05 – 2022.05</tableheading></td>
-                    <td> 河南省级大学生创新训练项目“基于卷积神经网络的智能疫情防控系统“ - <strong>项目负责人</strong></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <strong>项目描述：</strong>
-                        将采集到视频输入，利用 OpenCV 和 YOLO 进行行人检测和社交距离计算，对社交距离过近的用户进行标注，
-                        并对当前场景内违反社交距离的人数进行统计，进而可对当前场景进行疫情风险评估。之后根据目标人员的体态、衣着等特征，
-                        对其进行跨摄像头的连续追踪，帮助有关部门锁定目标人员活动轨迹，缩小排查范围，降低防疫难度。
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <strong> 主要技术：</strong>
-                        OpenCV + YOLO + CNN + ReID。
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <strong> 主要工作：</strong>
-                        带领团队进行调研，分析项目的立意和可行性；带领团队进行视频和数据的采集和处理；
-                        配合团队成员进行神经网络的设计、完善和调参，实现主要代码；负责系统的测试，保障系统服务质量。
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <strong> 项目成果：</strong>
-                        作品参加相关竞赛共获得省级奖项 2 项，校级奖项 3 项。 以“良好”结项。
-                    </td>
-                </tr>
+                    <tr>
+                        <td valign="top" align="center"><tableheading>2023.09 - 2023.12</tableheading></td>
+                        <td> <strong>基于 Reactor 模型的多线程网络库</strong> - 自学实践项目</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong>【项目描述】：</strong>
+                            这是一个多线程 C++ 网络编程框架，专注于高性能网络应用开发。框架基于 epoll 事件驱动模型，结合非阻塞 I/O 和 LT (Level Triggered) 模式，实现了主从 Reactor 模型。
+                            内部采用基于对象的编程风格和 One Loop Per Thread 的设计，利用回调函数和 I/O 多路复用 (epoll) 来高效处理任务和事件。
+                            该框架设计简单易用，适合构建高效、可扩展的服务器端应用程序，特别是在高并发场景下表现优越。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【主要技术】：</strong>
+                            C++、Linux、Epoll、Reactor、线程池、智能指针。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【主要工作】：</strong>
+                            底层实现了 Epoll + LT 模式的 I/O 复用模型，结合非阻塞 I/O 以构建主从 Reactor 模型。
+                            使用线程池和 One Loop Per Thread 线程模型，提升系统的并发处理能力并减少性能开销。遵循 RAII 思想使用智能指针管理内存，减小内存泄露风险。
+                            使用 eventfd 进行事件通知，以高效地将事件派发到其他线程进行异步处理，多个线程无需上锁就可以实现同步。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【项目成果】：</strong>
+                            使每个模块的工作更加专一，耦合度更低，性能和稳定性也大量的提升，支持的可并发客户端数量可达到上百万级别。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【个人收获】：</strong>
+                            对 Epoll 和 Reactor 模型有了较深的理解、掌握了基于事件驱动和事件回调的 Epoll+ 线程池的面向对象编程思想，能够利用该思想设计并实现更优秀的系统级产品。
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td valign="top" align="center"><tableheading>June 2021</tableheading></td>
+                        <td> Invited paper talk at <a href="https://sightsound.org/">Sight and Sound Workshop</a>, CVPR 2021, "Neural Dubber: Dubbing for Silent Videos According to Scripts" 
+                        (<a href="https://youtu.be/IEFuj7WGO-c?t=2899">Talk</a>)
+                        </td>
+                    </tr>
+                    -->
+                    
+                </tbody>
 
-                <!--
-                <tr>
-                    <td valign="top" align="center"><tableheading>June 2021</tableheading></td>
-                    <td> Invited paper talk at <a href="https://sightsound.org/">Sight and Sound Workshop</a>, CVPR 2021, "Neural Dubber: Dubbing for Silent Videos According to Scripts" 
-                    (<a href="https://youtu.be/IEFuj7WGO-c?t=2899">Talk</a>)
-                    </td>
-                </tr>
-                -->
+                <tbody>
+                    <tr>
+                        <td valign="top" align="center"><tableheading>2024.02 - 2024.06</tableheading></td>
+                        <td> <strong>基于激光雷达的大规模森林场景位置识别</strong>  - 实验室科研项目 第一作者（目前论文在投）</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong>【项目描述】：</strong>
+                            现有的激光 SLAM 回环检测工作通常针对于城市、校园等结构化场景，而针对茂密丛林场景的效果较差，对此提出了一种两阶段的回环检测算法。
+                            首先，提取出具有旋转平移不变性的局部三角形描述符，利用哈希表与投票机制来构建候选帧集合。
+                            然后，利用树干分布信息设计出全局快照来增强回环帧的匹配过程，从而实现稳定且精确的位置识别。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【主要技术】：</strong>
+                            ROS、PCL、Eigen、DBSCAN、KD-Tree、Hash。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【主要工作】：</strong>
+                            搭建 Argo 全地形车采集平台采集了一个越野路数据集 JORD ，并对其中的数据进行了清洗与格式转换；
+                            复现近 5 年先进的回环检测算法，并集成进一个统一的框架中进行批量测试与实验；
+                            设计并实现了针对茂密丛林场景的两阶段回环检测算法。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【项目成果】：</strong>
+                            在自主采集的越野路茂密丛林场景数据集中，所设计的回环检测算法与其他先进的描述符相比，在 EP 值和最大 F1 分数上至少能提升 8% 左右的精度。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【个人收获】：</strong>
+                            对位置识别有了较深入的理解，能够独立设计并实现具备旋转平移不变性的描述符来进行回环检测和重定位，并将其嵌入到 SLAM 系统中。
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td valign="top" align="center"><tableheading>June 2021</tableheading></td>
+                        <td> Invited paper talk at <a href="https://sightsound.org/">Sight and Sound Workshop</a>, CVPR 2021, "Neural Dubber: Dubbing for Silent Videos According to Scripts" 
+                        (<a href="https://youtu.be/IEFuj7WGO-c?t=2899">Talk</a>)
+                        </td>
+                    </tr>
+                    -->
+                    
+                </tbody>
+                
+                <tbody>
+                    <tr>
+                        <td valign="top" align="center"><tableheading>2021.05 – 2022.05</tableheading></td>
+                        <td> <strong>基于卷积神经网络的智能疫情防控系统</strong> - 河南省级大学生创新训练项目 项目负责人</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong>【项目描述】：</strong>
+                            将采集到视频输入，利用 OpenCV 和 YOLO 进行行人检测和社交距离计算，对社交距离过近的用户进行标注，并对当前场景内违反社交距离的人数进行统计，进而可对当前场景进行疫情风险评估。
+                            之后根据目标人员的体态、衣着等特征，对其进行跨摄像头的连续追踪，帮助有关部门锁定目标人员活动轨迹，缩小排查范围，降低防疫难度。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【主要技术】：</strong>
+                            Python、PyTorch、PyQT、MySQL、OpenCV、YOLO、CNN、ReID。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【主要工作】：</strong>
+                            负责基于行人重识别的目标跨镜追踪板块的设计与实现。设计并实现了具有行人目标图片匹配和行人目标跨镜追踪两大核心功能，的跨摄像头行人目标追踪系统。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【项目成果】：</strong>
+                            作品参加相关竞赛共获得省级奖项 2 项，校级奖项 3 项。以“良好”结项。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <strong> 【个人收获】：</strong>
+                            对深度学习的相关概念、行人重识别 ReID 的技术及系统流程有了较深的了解，能够利用该技术设计并实现系统级产品。
+                        </td>
+                    </tr>
+
+                    <!--
+                    <tr>
+                        <td valign="top" align="center"><tableheading>June 2021</tableheading></td>
+                        <td> Invited paper talk at <a href="https://sightsound.org/">Sight and Sound Workshop</a>, CVPR 2021, "Neural Dubber: Dubbing for Silent Videos According to Scripts" 
+                        (<a href="https://youtu.be/IEFuj7WGO-c?t=2899">Talk</a>)
+                        </td>
+                    </tr>
+                    -->
                 
                 </tbody>
             </table>
@@ -395,23 +572,27 @@
                     </ul>
                     -->
                     <tr>
-                        <td valign="top" align="center"><tableheading>2022 - 2023学年</tableheading></td>
-                        <td>吉大2022年度硕士研究生学业奖学金</td>
+                        <td valign="top" align="center"><tableheading>2023 - 2024 学年</tableheading></td>
+                        <td>吉林大学 2023 年度硕士研究生学业奖学金</td>
                     </tr>
                     <tr>
-                        <td valign="top" align="center"><tableheading>2021 - 2022学年</tableheading></td>
-                        <td>华水自强奖学金、杰出校友奖学金、优秀毕业生一等奖学金 (Top 3%)、2022届华北水利水电大学优秀应届毕业生、华北水利水电大学校优秀毕业设计</td>
+                        <td valign="top" align="center"><tableheading>2022 - 2023 学年</tableheading></td>
+                        <td>吉林大学 2022 年度硕士研究生学业奖学金</td>
                     </tr>
                     <tr>
-                        <td valign="top" align="center"><tableheading>2020 - 2021学年</tableheading></td>
+                        <td valign="top" align="center"><tableheading>2021 - 2022 学年</tableheading></td>
+                        <td>华水自强奖学金、优秀毕业生一等奖学金 (Top 3%)、2022 届华北水利水电大学优秀应届毕业生、华北水利水电大学校优秀毕业设计</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align="center"><tableheading>2020 - 2021 学年</tableheading></td>
                         <td>三好学生、优秀团员、优秀团干部、杰出校友奖学金、一等优秀学生奖学金 (Top 3%)、一等学业奖学金 (Top 3%)</td>
                     </tr>
                     <tr>
-                        <td valign="top" align="center"><tableheading>2019 - 2020学年</tableheading></td>
+                        <td valign="top" align="center"><tableheading>2019 - 2020 学年</tableheading></td>
                         <td>三好学生、优秀团员、优秀团干部、国家励志奖学金</td>
                     </tr>
                     <tr>
-                        <td valign="top" align="center"><tableheading>2018 - 2019学年</tableheading></td>
+                        <td valign="top" align="center"><tableheading>2018 - 2019 学年</tableheading></td>
                         <td>三好学生、一等优秀学生奖学金 (Top 3%)、一等学业奖学金 (Top 3%)</td>
                     </tr>
                 </tbody>
@@ -425,13 +606,17 @@
                     </tr>
                 </tbody>
             </table>
+            <!--
+                <table class="news-table" width="94%" align="center" border="0" style="text-align: justify">
+            -->
             <table class="news-table" width="94%" align="center" border="0" style="text-align: justify">
                 <tbody>
                         <ul>
                             <li>（国家级）2021 年第 45 届国际大学生程序设计竞赛 <strong>(ICPC) 区域赛铜奖</strong>；🎉</li>
                             <li>（国家级）2020 年全国高校计算机能力挑战赛 程序设计赛 <strong>决赛一等奖 (Top 2%)</strong>；🎉</li>
                             <li>（国家级）2021 年第十二届蓝桥杯大赛 C/C++ 程序设计大学 B 组 <strong>全国总决赛二等奖</strong>；</li>
-                            <li>（国家级）2021 年中国高校计算机大赛 - 团体程序设计天梯赛 <strong>全国总决赛个人二等奖 (个人得分 220 分以上)</strong>；</li>
+                            <li>（国家级）2020 年第十一届蓝桥杯大赛 C/C++ 程序设计大学 B 组 <strong>全国总决赛二等奖</strong>；</li>
+                            <li>（国家级）2021 年中国高校计算机大赛 - 团体程序设计天梯赛 <strong>全国总决赛 团体银奖 个人二等奖 (个人 220 分以上)</strong>；</li>
                             <li>（国家级）2021 年中国高校计算机大赛 - 网络技术挑战赛 全国总决赛三等奖；</li>
                             <li>（省级）2020 年第六届“互联网+”大学生创新创业大赛 河南赛区一等奖；</li>
                             <li>（省级）2020 年 CCPC 中国大学生程序设计竞赛 河南省赛银奖； </li>
